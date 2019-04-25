@@ -55,6 +55,7 @@ const routes = [
 ]
 
 export default new Router({
+  base: process.env.BASE_PATH,
   mode: "history",
   routes: routes,
   scrollBehavior(to, from) {
