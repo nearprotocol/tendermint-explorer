@@ -12,7 +12,7 @@ menu.app-menu
 <script>
 import { mapGetters } from "vuex"
 import noScroll from "no-scroll"
-import votingValidators from "scripts/votingValidators"
+import votingValidators from "@/scripts/votingValidators"
 import { TmListItem, TmPart } from "@tendermint/ui"
 export default {
   name: "app-menu",

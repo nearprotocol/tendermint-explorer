@@ -1,8 +1,9 @@
 import axios from "axios"
 import { RpcClient } from "tendermint"
 
+console.log(process.env)
 const state = {
-  rpc: "http://localhost:26657",
+  rpc: process.env.RPC_ADDR,
   //lcd: "https://gaia-seeds.interblock.io:1317",
   status: {
     listen_addr: "",
@@ -24,7 +25,7 @@ const state = {
   roundStep: ""
 }
 
-const client = RpcClient("ws://localhost:26657")
+const client = RpcClient(process.env.WS_ADDR)
 
 const actions = {
   subNewBlock({ commit, dispatch }) {

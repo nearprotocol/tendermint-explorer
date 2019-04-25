@@ -13,10 +13,10 @@ tm-page(title='Revoked Validators')
 
 <script>
 import { mapGetters } from "vuex"
-import orderedValidators from "scripts/orderedValidators"
-import validatorTitle from "scripts/validatorTitle"
-import votingPower from "scripts/votingPower"
-import revokedValidators from "scripts/revokedValidators"
+import orderedValidators from "@/scripts/orderedValidators"
+import validatorTitle from "@/scripts/validatorTitle"
+import votingPower from "@/scripts/votingPower"
+import revokedValidators from "@/scripts/revokedValidators"
 import { TmListItem, TmPage } from "@tendermint/ui"
 export default {
   name: "page-validators-revoked",

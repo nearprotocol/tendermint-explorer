@@ -13,7 +13,7 @@ export default {
 </script>
 
 <style lang="stylus">
-@require '~variables'
+@require '../styles/variables.styl'
 
 .app-footer
   display none
